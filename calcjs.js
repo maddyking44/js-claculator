@@ -2,26 +2,22 @@
 var sum=[];
 var work=0;
 
-
-
-//when button is pushed, retain value and print to screen
-var work = addEventListener("onClick", print); 
+//For numbers, print number to screen and push value to sum array
 
 function f1(objButton){  
     document.getElementById("screen").innerHTML = (objButton.value);
     sum.push(objButton.value);
 }
-console.log(sum)
 
-//push value to sum array
-//sum.push(work);
+//for operators, print operator to screen and push operator to sum array
+function f2(objButton) {
+    document.getElementById("screen").innerHTML = (objButton.value);
+    sum.push(objButton.value);
+}
 
-//calculate values in sum array and convert to string
-//for (i=0; i<sum.length; i++) {
-//var ans = (sum.reduce).toString;
-//}
+ console.log(sum)
 
-// prints result to screen
-//function res() {
-//document.getElementById("screen").innerHTML = ans;
-//}
+ //if (objButton.value = "C" || "AC") {
+ //   sum=[];
+ //}
+
