@@ -7,8 +7,8 @@ var work=0;
 //when button is pushed, retain value and print to screen
 var work = addEventListener("onClick", print); 
 
-function print() {
-document.getElementById("screen").innerHTML = work;
+function f1(objButton){  
+    document.getElementById("screen").innerHTML = (objButton.value);
 }
 
 //push value to sum array
