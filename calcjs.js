@@ -1,6 +1,6 @@
 
 var sum=[];
-var answer=0;
+var answer="";
 
 //Print number or operator to screen and push value to sum array
 
@@ -13,28 +13,39 @@ function f1(objButton){
 function f2(objButton) {
     sum = [];
     document.getElementById("screen").innerHTML = "0";
-    console.log(sum);
+    console.log(sum)
 }
 
+// //run equation when equals is pushed
+// function f3(objButton) {
+//     document.getElementById("screen").innerHTML = (sum);
+//     console.log(sum)
+// }
+
 //run equation when equals is pushed
-function f3(objButton) {{
-        if ((sum[1]) == "+") {
-        answer == ((sum[0]) += (sum[2]));
+function f3(objButton) {{{
+     var operator = sum[1];
+     var first = Number(sum[0]);
+     var second = Number(sum[2]);
+        if (operator == "+") {
+        answer = (first += second);
                             }
-        else if ((sum[1]) = "/") {
-        answer == ((sum[0]) /= (sum[2]));
+        else if (operator == "/") {
+        answer = (first /= second);
                             }
-        else if ((sum[1]) = "*") {
-        answer == ((sum[0]) *= (sum[2]));
+        else if (operator == "*") {
+        answer = (first *= second);
                             }
-        else if ((sum[1]) = "-") {
-        answer == ((sum[0]) -= (sum[2]));
+        else if (operator == "-") {
+        answer = (first -= second);
                             }
-        else answer == "invalid";
+        else answer = "invalid";
         }
     document.getElementById("screen").innerHTML = (answer);
-    console.log((sum[0]) += (sum[2]))
+    console.log((first) += (second))
     console.log(sum)
+}
+sum = [];
 }
 
 

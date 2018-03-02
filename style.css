@@ -31,16 +31,20 @@
 {
     padding: 15px 34px
 }
-button:hover {
+.button:hover {
+    background-color: #e8f0ff;
+    color: white;
+}
+#button2col:hover {
     background-color: #e8f0ff;
     color: white;
 }
 #screen {
-    width:100%;
+    width:280px;
     background-color:white;
     border: 3px solid #ededed;
     color: black;
-    padding:15px;
+    padding:25px;
     text-align: right;
     text-decoration: none;
     font-size: 36px;
