@@ -10,7 +10,7 @@ button
     display: inline-block;
     font-size: 16px;
 }
-.button2col
+#button2col
 {
     border-radius: 12px;
     width: 165px;
@@ -23,11 +23,11 @@ button
     display: inline-block;
     font-size: 16px;
 }
-.small
+#small
 {
     padding: 15px 35px
 }
-.mid
+#mid
 {
     padding: 15px 34px
 }

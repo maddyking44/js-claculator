@@ -1,22 +1,25 @@
 
 var sum=[];
-var working=0;
-var calc='';
-document.getElementById("button")
-button.addEventListener("onClick", add); 
+var work=0;
 
-function add() {
-     var num = $(this).text();
+
+
+//when button is pushed, retain value and print to screen
+var work = addEventListener("onClick", print); 
+
+function print() {
+document.getElementById("screen").innerHTML = work;
 }
 
-sum.push(num);
+//push value to sum array
+sum.push(work);
 
+//calculate values in sum array and convert to string
 for (i=0; i<sum.length; i++) {
 var ans = (sum.reduce).toString;
 }
 
-
-// prints sum to results div
+// prints result to screen
 function res() {
-document.getElementById(result).innerHTML = ans;
+document.getElementById("screen").innerHTML = ans;
 }
