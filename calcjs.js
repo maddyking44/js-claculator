@@ -1,38 +1,41 @@
 
 var sum=[];
 var answer=0;
-var gem=0;
 
-//For numbers, print number to screen and push value to sum array
+//Print number or operator to screen and push value to sum array
 
 function f1(objButton){  
     document.getElementById("screen").innerHTML = (objButton.value);
     sum.push(objButton.value);
 }
 
-
-
-//for operators, print operator to screen and push operator to sum array
+//clear array and screen when AC or C is pushed
 function f2(objButton) {
-    document.getElementById("screen").innerHTML = (objButton.value);
-    sum.push(objButton.value).toString;
+    sum = [];
+    document.getElementById("screen").innerHTML = "0";
+    console.log(sum);
 }
 
 //run equation when equals is pushed
-function f3(objButton) {
-    var answer = sum.reduce(
-            function(a, b, c){
-                return (abc)
-            });
+function f3(objButton) {{
+        if ((sum[1]) == "+") {
+        answer == ((sum[0]) += (sum[2]));
+                            }
+        else if ((sum[1]) = "/") {
+        answer == ((sum[0]) /= (sum[2]));
+                            }
+        else if ((sum[1]) = "*") {
+        answer == ((sum[0]) *= (sum[2]));
+                            }
+        else if ((sum[1]) = "-") {
+        answer == ((sum[0]) -= (sum[2]));
+                            }
+        else answer == "invalid";
+        }
     document.getElementById("screen").innerHTML = (answer);
+    console.log((sum[0]) += (sum[2]))
+    console.log(sum)
 }
 
-console.log(sum)
 
-
-
-
- //if (objButton.value = "C" || "AC") {
- //   sum=[];
- //}
 
