@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maddy's Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="calcjs.js"></script>
+  </head>
+  <body>
+    <table style="width:250px">
+        <tr class="row">
+            <td colspan="4">
+                <div id="screen"> 0</div>
+            </td>
+        </tr>
+        <tr class="row">
+            <td colspan="2">
+                <input type='button' value='AC' onclick='f2(this)' class="button" id="button2col"/>
+            </td>
+            <td>
+                <input type='button' value='C' onclick='f2(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='/' onclick='f1(this)' class="button"/ id="small"/>
+            </td>
+        </tr>
+        <tr class="row">
+            <td>
+                <input type='button' value='7' onclick='f1(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='8' onclick='f1(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='9' onclick='f1(this)' class="button"/> 
+            </td>
+            <td>
+                <input type='button' value='*' onclick='f1(this)' class="button"/ id="mid"/>
+            </td>
+        </tr>
+        <tr class="row">
+            <td>
+                <input type='button' value='4' onclick='f1(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='5' onclick='f1(this)' class="button"/> 
+            </td>
+            <td>
+                <input type='button' value='6' onclick='f1(this)' class="button"/> 
+            </td>
+            <td>
+                <input type='button' value='-' onclick='f1(this)' class="button" id="mid"/>
+           </td>
+        </tr>
+        <tr class="row">
+            <td>
+                <input type='button' value='1' onclick='f1(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='2' onclick='f1(this)' class="button"/>
+            </td>
+            <td>
+                <input type='button' value='3' onclick='f1(this)' class="button"/>            
+            </td>
+            <td>
+                <input type='button' value='+' onclick='f1(this)' class="button"/>
+            </td>
+        </tr>
+        <tr class="row">
+            <td colspan="2">
+                <input type='button' value='0' onclick='f1(this)' class="button" id="button2col"/> 
+            </td>
+            <td>
+                <input type='button' value='.' onclick='f1(this)' class="button" id="small"/>
+            </td>
+            <td>
+                <input type='button' value='=' onclick='f3(this)' class="button"/>
+            </td>
+        </tr>
+    </table>
+
+
+  </body>
